@@ -34,6 +34,9 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
 </head>
 
 <body id="page-top">
@@ -69,6 +72,18 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
+
+    <!--輪播-->
+    <script src="js/jquery.backstretch.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.header').backstretch([
+           "img/head_1.jpg"
+         , "img/head_2.jpg"
+         , "img/head_3.jpg"
+         ], {duration: 3000, fade: 750});
+      });
+    </script>
 
     <header class="header">
         <div class="header-content">
@@ -263,20 +278,6 @@
         </div>
     </section>
 
-    <!-- jQuery -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-
-    <!--輪播-->
-    <script src="js/jquery.backstretch.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function(){
-        $('.header').backstretch([
-           "img/header.jpg"
-         , "img/header_1.jpg"
-         , "img/header_2.jpg"
-         ], {duration: 3000, fade: 750});
-      });
-    </script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
